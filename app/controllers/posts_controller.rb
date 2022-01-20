@@ -22,6 +22,7 @@ class PostsController < ApplicationController
 
   # POST /posts or /posts.json
   def create
+    @posts = Post.all
     @post = Post.new(post_params)
     sleep 1.seconds
 
