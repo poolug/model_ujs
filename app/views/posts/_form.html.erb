@@ -1,0 +1,5 @@
+<%= form_with model: post do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.submit data: { disable_with: 'Creando post...' } %>
+<% end %>
