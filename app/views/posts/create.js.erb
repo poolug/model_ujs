@@ -1,2 +1,2 @@
-document.querySelector('ul').innerHTML('beforeend', '<%= escape_javascript render @post %>')
+document.querySelector('ul').insertAdjacentHTML('beforeend', '<%= escape_javascript render @post %>')
 $('#post_name').val('')
