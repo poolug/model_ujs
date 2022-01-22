@@ -1,4 +1,5 @@
 <li id="pst-<%= post.id %>">
+  <%= "Nro #{post.id}: " %>
   <%= post.name %>
   <%= link_to "Show", post, remote: true %>
   <%= link_to "Edit", edit_post_path(post), remote: true %>
